@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KimJChan Portforlio</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <script src="dist/3.4.3"></script>
+  <link href="dist/flowbite.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <script defer src="dist/flowbite.min.js"></script>
   <style>
     * {
       font-family: "Noto Sans KR", sans-serif;
@@ -156,13 +157,13 @@
           <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">codeigniter4</button>
         </div>
       </div>
-      <div class="md:w-60">
+      <div class="md:w-60 w-full">
         <h2 class="text-2xl font-bold text-gray-500">Database</h2>
         <div class="w-full mt-3 flex flex-wrap gap-2">
           <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">MySQL</button>
         </div>
       </div>
-      <div class="md:w-60">
+      <div class="md:w-60 w-full">
         <h2 class="text-2xl font-bold text-gray-500">VCS</h2>
         <div class="w-full mt-3 flex flex-wrap gap-2">
           <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Git</button>
@@ -174,7 +175,7 @@
     </div>
     <h2 class="my-3 text-2xl">Tools</h2>
     <div class="w-full max-w-6xl flex justify-around">
-      <div class="w-full mt-3 flex gap-2 justify-center">
+      <div class="w-full mt-3 flex flex-wrap gap-2 justify-center">
         <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Bracket</button>
         <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">VSCODE</button>
         <button type="button" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Workbench</button>
@@ -215,7 +216,7 @@
   </div>
   <div id="Portforlio">
     <h1 class="pt-[60px] my-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-3xl lg:text-4xl dark:text-white text-center">포트폴리오</h1>
-    <div class="w-full flex justify-center mb-9">
+    <div class="w-full flex justify-center mb-9 hidden">
       <div class="inline-flex rounded-md shadow-sm mx-auto" role="group">
         <button type="button" onclick="show_port(0)" class="view_method_btn inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 border rounded-s-lg hover:bg-blue-900 hover:text-white focus:z-10 focus:ring-2 focus:ring-gray-500  focus:text-white dark:border-white dark:text-white dark:hover:text-white dark:hover:bg-gray-700 dark:focus:bg-gray-700 bg-blue-900 border-blue-900 text-white">
           <span class="material-symbols-outlined">
@@ -232,7 +233,7 @@
       </div>
     </div>
     <div class="vertical_list">
-      <div class="w-full p-9 bg-stone-100 flex flex-col items-center">
+      <div class="w-full p-9 flex flex-col items-center">
         <h2 class="mb-6 font-bold text-xl">핵심 기술 : HTML5, CSS3</h2>
         <div class="max-w-6xl w-full flex md:justify-between md:flex-row flex-col-reverse md:items-start items-center">
           <div class="flex-1 p-6">
@@ -251,7 +252,7 @@
             <div class="relative">
               <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
               <div class="w-[94%] h-[72%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-                <img src="./img/apple/ipad.png" class="hover:translate-y-[-500px] duration-1000">
+                <img src="./img/apple/ipad.png" class="hover:translate-y-[-50%] duration-1000">
               </div>
             </div>
           </div>
@@ -285,7 +286,7 @@
             <div class="relative">
               <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
               <div class="w-[94%] h-[72%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-                <img src="./img/bux/main.png" class="hover:translate-y-[-500px] duration-1000">
+                <img src="./img/bux/main.png" class="hover:translate-y-[-50%] duration-1000">
               </div>
             </div>
           </div>
@@ -325,7 +326,7 @@
             <div class="relative">
               <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
               <div class="w-[94%] h-[72%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-                <img src="./img/placebook/main.jpeg" class="hover:translate-y-[-500px] duration-1000">
+                <img src="./img/placebook/main.jpeg" class="hover:translate-y-[-50%] duration-1000">
               </div>
             </div>
           </div>
@@ -359,7 +360,7 @@
             <div class="relative">
               <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
               <div class="w-[94%] h-[72%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-                <img src="./img/ship_anything.jpeg" class="hover:translate-y-[-500px] duration-1000">
+                <img src="./img/ship_anything.jpeg" class="hover:translate-y-[-50%] duration-1000">
               </div>
             </div>
           </div>
@@ -450,7 +451,7 @@
     </div>
     <div class="switcher_list hidden">
       <div class="w-full p-9 bg-stone-100">
-        <div class="flex justify-center">
+        <div class="flex justify-center hidden">
           <div class="text-sm font-medium text-center text-gray-500 border-b border-gray-200 dark:text-gray-400 dark:border-gray-700">
             <ul class="flex flex-wrap -mb-px">
                 <li class="me-2">
@@ -475,42 +476,42 @@
           </div>
         </div>
         <div class="display_area w-full flex justify-center mt-9 h-[455px] relative overflow-hidden">
-          <div class="display_part absolute flex flex-col items-center gap-3 duration-500">
+          <div class="display_part absolute flex flex-col items-center gap-3 opacity-0 duration-500 invisible translate-x-[20px]">
             <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
             <div class="w-[94%] h-[65%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-              <img src="./img/apple/ipad.png" class="hover:translate-y-[-500px] duration-1000">
+              <img src="./img/apple/ipad.png" class="hover:translate-y-[-50%] duration-1000">
             </div>
             <button type="button" data-modal-target="ipad-modal" data-modal-toggle="ipad-modal" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Detail</button>
           </div>
           <div class="display_part absolute flex flex-col items-center gap-3 opacity-0 duration-500 invisible translate-x-[20px]">
             <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
             <div class="w-[94%] h-[65%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-              <img src="./img/bux/main.png" class="hover:translate-y-[-500px] duration-1000">
+              <img src="./img/bux/main.png" class="hover:translate-y-[-50%] duration-1000">
             </div>
             <button type="button" data-modal-target="startbux-modal" data-modal-toggle="startbux-modal" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Detail</button>
           </div>
           <div class="display_part absolute flex flex-col items-center gap-3 opacity-0 duration-500 invisible translate-x-[20px]">
             <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
             <div class="w-[94%] h-[65%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-              <img src="./img/placebook/main.jpeg" class="hover:translate-y-[-500px] duration-1000">
+              <img src="./img/placebook/main.jpeg" class="hover:translate-y-[-50%] duration-1000">
             </div>
             <button type="button" data-modal-target="placebook-modal" data-modal-toggle="placebook-modal" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Detail</button>
           </div>
           <div class="display_part absolute flex flex-col items-center gap-3 opacity-0 duration-500 invisible translate-x-[20px]">
             <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
             <div class="w-[94%] h-[65%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-              <img src="./img/ship_anything.jpeg" class="hover:translate-y-[-500px] duration-1000">
+              <img src="./img/ship_anything.jpeg" class="hover:translate-y-[-50%] duration-1000">
             </div>
             <button type="button" data-modal-target="shipanyhing-modal" data-modal-toggle="shipanyhing-modal" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Detail</button>
           </div>
           <div class="display_part absolute flex flex-col items-center gap-3 opacity-0 duration-500 invisible translate-x-[20px]">
             <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
             <div class="w-[94%] h-[65%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
-              <img src="./img/movie/index.jpeg" class="hover:translate-y-[-200px] duration-1000">
+              <img src="./img/movie/index.jpeg" class="hover:translate-y-[-50%] duration-1000">
             </div>
             <button type="button" data-modal-target="movieapp-modal" data-modal-toggle="movieapp-modal" class="px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Detail</button>
           </div>
-          <div class="display_part absolute flex flex-col items-center gap-3 opacity-0 duration-500 invisible translate-x-[20px]">
+          <div class="display_part absolute flex flex-col items-center gap-3 duration-500">
             <img src="./img/desktop02.png" class="w-full max-w-[500px]"/>
             <div class="w-[94%] h-[65%] bg-blue-100 absolute top-[3.8%] left-[3%] overflow-hidden">
               <img src="./img/ci4_board/list.png" class="h-full w-auto">
@@ -878,7 +879,6 @@
       </div>
     </div>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
   <script>
     function switcher(idx){
       const switcher_listEl = document.querySelector('.switcher_list');
